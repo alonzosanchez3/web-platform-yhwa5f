@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <form class="form-container">
+        <h2 class="form-container__title">Sign Up</h2>
+        <input
+          type="text"
+          class="form-container__firstname"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          class="form-container__lastname"
+          placeholder="Last Name"
+        />
+        <input
+          type="text"
+          class="form-container__phone"
+          placeholder="Mobile No."
+        />
+        <input
+          type="email"
+          class="form-container__email"
+          placeholder="Email Address"
+        />
+        <input
+          type="password"
+          class="form-container__password"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          class="form-container__confirmPassword"
+          placeholder="Confirm Password"
+        />
+        <div class="checkbox-container">
+          <input type="checkbox" />
+          <label for=""><strong>I Agree</strong></label>
+        </div>
+        <p>
+          By clicking <span>Register</span>, you agree to the
+          <a>Terms and Conditions</a> set out by this site, including our Cookie
+          Use.
+        </p>
+        <input
+          type="submit"
+          value="Register"
+          class="form-container__register"
+        />
+        <button class="form-container__signIn">Sign In</button>
+      </form>
+    </main>
+  </body>
+</html>

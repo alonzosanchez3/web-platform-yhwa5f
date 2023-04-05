@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 44rem;
+}
+
+.form-container input {
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+
+.form-container__title,
+.form-container__phone,
+.form-container__email {
+  flex: 0 0 calc(100% - 1rem);
+}
+
+.form-container__title {
+  text-align: center;
+}
+
+.form-container__firstname,
+.form-container__lastname,
+.form-container__password,
+.form-container__confirmPassword,
+.form-container__register,
+.form-container__signIn {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 calc(30% - 1rem);
+}
+
+p {
+  flex: 0 0 calc(70% - 1rem);
+}
+
+p span {
+  color: white;
+  background-color: #2196f3;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+}
+
+p a {
+  color: #2196f3;
+}
+
+.form-container__register {
+  background-color: #2196f3;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.form-container__signIn {
+  background-color: #5cb910;
+  color: white;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .form-container__firstname,
+  .form-container__lastname,
+  .form-container__password,
+  .form-container__confirmPassword,
+  .form-container__register,
+  .form-container__signIn {
+    flex: 0 0 calc(100% - 1rem);
+  }
+}
